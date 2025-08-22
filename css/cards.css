@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Componentes de Tarjetas
+   ========================================================================== */
+
+.card {
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: #fff;
+  color: #000;
+  border: none;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(62,158,116,0.18);
+}
+
+/* Iconos de tarjetas */
+.card .bi {
+  color: var(--mint-dark);
+}
+
+/* Tarjeta de registro */
+.card.register-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.card.register-card:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.card.register-card h3 {
+  color: var(--primary-dark);
+}
+
+.card.register-card p {
+  color: var(--mint-dark);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .card.register-card {
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+/* Estilos de imágenes */
+.main-img, .sidebar-img {
+  border: 2px solid var(--mint-dark);
+  border-radius: 0.75rem;
+}
+
+.lead {
+  color: var(--primary-dark);
+}
+
+.hero-btn:hover, .hero-btn:focus {
+  background: var(--mint-darker);
+  color: #fff;
+}

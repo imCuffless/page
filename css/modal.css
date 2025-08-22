@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Componentes de Modal y Tablas
+   ========================================================================== */
+
+/* Contenido del Modal */
+.modal-content {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Encabezado del Modal */
+.modal-header {
+  background: var(--mint-dark);
+  color: #000;
+  border-bottom: none;
+  padding: 1.25rem 1.5rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #000;
+}
+
+/* Estilos de Tabla */
+.table-custom {
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Encabezado de Tabla */
+.table-custom thead {
+  background-color: #222;
+}
+
+.table-custom thead th {
+  color: var(--mint-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+  border: none;
+}
+
+/* Colores alternos de filas */
+.table-custom tbody {
+  background-color: #fff;
+}
+
+.table-custom tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.table-custom tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.table-custom tbody td {
+  color: #333;
+  background-color: transparent;
+  padding: 0.9rem 1rem;
+  vertical-align: middle;
+  border: none;
+  border-color: rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Estilos de Botones */
+.btn-sm {
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-success.btn-sm {
+  background: rgba(127, 200, 169, 0.2);
+  color: var(--mint-darker);
+  border: none;
+}
+
+.btn-danger.btn-sm {
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+  border: none;
+}
+
+.btn-success.btn-sm:hover {
+  background: var(--mint-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(127, 200, 169, 0.3);
+}
+
+.btn-danger.btn-sm:hover {
+  background: #e74c3c;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* Pie del Modal */
+.modal-footer {
+  background: #f5f5f5;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 0.75rem 1.25rem;
+  justify-content: center;
+}
+
+/* Botón Cerrar */
+#modalClose {
+  background: var(--mint-dark);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.4rem 1.25rem;
+  min-width: 120px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#modalClose:hover {
+  background: var(--mint-darker);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Close button */
+.btn-close {
+  opacity: 0.5;
+}
+
+.btn-close:hover {
+  opacity: 0.8;
+}

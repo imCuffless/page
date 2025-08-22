@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Variables CSS y Estilos Globales
+   ========================================================================== */
+
+:root {
+  /* Variables de colores */
+  --primary-dark: #000000;
+  --secondary-mint: #7fc8a9;
+  --mint-dark: #7fc8a9;
+  --mint-darker: #599a8d;
+  --background-light: #f6f6f6;
+  --text-dark: #000000;
+  --text-light: #f6f6f6;
+  
+  /* Variables de espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Variables de bordes redondeados */
+  --border-radius-xs: 0.25rem;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+  --border-radius-xl: 2rem;
+}
+
+/* ==========================================================================
+   Estilos Base
+   ========================================================================== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--background-light);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   Estilos Comunes de Botones
+   ========================================================================== */
+
+.btn {
+  border-radius: var(--border-radius-sm);
+}
+
+.btn-success,
+.btn-info {
+  background: var(--mint-dark);
+  border-color: var(--mint-dark);
+  color: #000;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover, .btn-success:focus,
+.btn-info:hover, .btn-info:focus {
+  background: var(--mint-darker);
+  border-color: var(--mint-darker);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Controles de Formularios
+   ========================================================================== */
+
+.form-control {
+  background-color: #fff;
+  color: #000;
+  border: 1.5px solid var(--mint-dark);
+  border-radius: var(--border-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: var(--mint-darker);
+  box-shadow: 0 0 0 0.2rem rgba(89, 154, 141, 0.15);
+}
+
+/* ==========================================================================
+   Títulos de Secciones
+   ========================================================================== */
+
+.section-title {
+  color: #000;
+  border-left: 6px solid var(--mint-dark);
+  padding-left: 0.75rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
