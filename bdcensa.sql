@@ -50,8 +50,6 @@ INSERT INTO `registropersonas` (`id`, `nombre`, `apellido`, `edad`, `correo`, `t
 --
 -- Indices de la tabla `registropersonas`
 --
-ALTER TABLE `registropersonas`
-  ADD UNIQUE KEY `id` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -69,7 +69,10 @@ Sistema moderno de registro y administración de personas con interfaz minimalis
 
 ## Respaldo de Base de Datos
 
-A continuación se incluye un ejemplo de respaldo SQL que puedes importar directamente a tu gestor de base de datos (por ejemplo, phpMyAdmin o MySQL Workbench):
+
+A continuación se incluye un ejemplo de respaldo SQL que puedes importar directamente a tu gestor de base de datos (por ejemplo, phpMyAdmin o MySQL Workbench). 
+
+**Nota:** Se ha eliminado una línea redundante (`ALTER TABLE ... ADD PRIMARY KEY`) del respaldo SQL para evitar errores de clave primaria duplicada al importar. Si usas una versión anterior del respaldo y ves un error sobre la clave primaria, simplemente elimina esa línea.
 
 ````sql
 -- phpMyAdmin SQL Dump
@@ -197,8 +200,6 @@ INSERT INTO registropersonas (ID_Registro, Id, Nombre, Apellido, Edad, Correo, T
 --
 -- Indices de la tabla registropersonas
 --
-ALTER TABLE registropersonas
-  ADD PRIMARY KEY (ID_Registro);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
